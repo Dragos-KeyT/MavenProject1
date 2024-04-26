@@ -17,7 +17,7 @@ public class DbQuerys {
 			Statement statement =  coon.createStatement();
 			ResultSet resultSet = statement.executeQuery(query);
 			while(resultSet.next()) {
-				resultList.add(resultSet.getString(6));
+				resultList.add(resultSet.getString(2));
 			}
 			
 		}catch(SQLException e) {
@@ -39,11 +39,21 @@ public class DbQuerys {
 		}catch(SQLException e) {
 			System.out.println("Nu am putut face update");
 			e.printStackTrace();
-		}
-		
-		
+		}	
 	}
 	
 	
+	public static void dbDeleteQuery(Connection conn, String query) {
+		
+		try {
+			Statement statement =  conn.createStatement();
+			statement.executeUpdate(query);
+			System.out.println("Am facut delete");
+			
+		}catch(SQLException e) {
+			System.out.println("Nu am putut face delete");
+			e.printStackTrace();
+		}	
+	}
 
 }

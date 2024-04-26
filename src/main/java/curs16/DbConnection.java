@@ -25,6 +25,7 @@ public class DbConnection {
 			System.out.println("Incerc sa inchid conexiunea");
 			conn.close();
 			System.out.println("Conexiunea a fost inchisa");
+			
 		}catch(SQLException e) {
 			System.out.println("Nu am reusit sa inchid conexiunea");
 			e.printStackTrace();
