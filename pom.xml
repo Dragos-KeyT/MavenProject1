@@ -5,6 +5,20 @@
   <version>0.0.1-SNAPSHOT</version>
   
   <dependencies>
+	  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+	    <version>4.20.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>7.10.1</version>
+	    <scope>test</scope>
+	</dependency>
+
 	  
 	  <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
 	<dependency>
