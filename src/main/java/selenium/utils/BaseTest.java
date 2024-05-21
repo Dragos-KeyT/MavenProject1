@@ -2,6 +2,7 @@ package selenium.utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -14,7 +15,7 @@ public class BaseTest {
 		//FirefoxDriver()
 		//EdgeDriver()
 		//System.set.property("webdriver.chrome.driver", "path to chromedriver.exe");
-		driver = new ChromeDriver();
+		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("https://keybooks.ro/");
 		
